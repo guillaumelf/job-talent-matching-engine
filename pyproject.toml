@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "job-talent-matching-engine"
+version = "0.1.0"
+description = "This package aims at build a lightweight search & ranking component to match talents with jobs."
+authors = ["Guillaume Le Floch <guillaume.lefloch56@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+
+
+[tool.poetry.group.analysis.dependencies]
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.1"
+jinja2 = "^3.1.4"
+seaborn = "^0.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^24.4.2"}
+isort = "^5.13.2"
+pylint = "^3.2.6"
+mypy = "^1.11.0"
+pandas-stubs = "^2.2.2.240603"
+stubs = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
