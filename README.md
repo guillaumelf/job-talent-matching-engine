@@ -35,3 +35,5 @@ poetry install
 ```bash
 python -m src
 ```
+
+The main code is located in the `src` folder, data exploration & model training notebooks can be found in the `notebooks` directory.
